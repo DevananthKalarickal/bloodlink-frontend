@@ -1,0 +1,118 @@
+/* Sidebar container */
+.sidebar {
+  width: 200px;
+  height: 100vh; /* Sidebar height set to maximum viewport height */
+  overflow-y: auto; /* Adds scroll if content exceeds the height */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fffefe; /* Dark grey sidebar background */
+  gap: 20px; /* Adds space between each sidebar-item */
+  /* Optional shadow for contrast */
+  
+}
+
+/* Individual items in sidebar */
+.sidebar-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Increased gap for more spacing between buttons */
+}
+
+/* Sidebar buttons with black background */
+.sidebar-button {
+  background-color: #000; /* Black button background */
+  color: #fff; /* White text for contrast */
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 30px; /* Rounded corners for buttons */
+  display: flex;
+  align-items: center;
+  
+  gap: 12px;
+  font-weight: bold;
+  text-align: left;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 10px; 
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  /* box-shadow: rgba(205, 24, 24, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(200, 44, 44, 0.2) -15px 15px, rgba(229, 69, 69, 0.1) -20px 20px, rgba(233, 88, 88, 0.05) -25px 25px; */
+}
+
+/* Hover effect for sidebar buttons */
+.sidebar-button:hover {
+  background-color: #222; /* Darker grey on hover for slight contrast */
+  transform: scale(1.05);
+}
+
+/* Active menu item styling */
+.sidebar-button.active {
+  background-color: #444; /* Slightly lighter grey for active state */
+  color: #fff;
+}
+
+/* Icon styling within buttons */
+.icon {
+  font-size: 1.5rem;
+  color: #fff; /* White icon color for consistency with text */
+}
+
+
+.menu {
+  padding-top: 100px;
+}
+
+/* Style each menu item to match inline styles */
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  gap: 10px;
+  color: #fff;
+}
+
+/* Link styles within each menu item */
+.menu-item a {
+  color: inherit; /* Matches the inline 'inherit' color */
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Icon styles within each menu item */
+.menu-item i {
+  font-size: 1.2rem;
+  color: inherit;
+}
+
+/* Active state style */
+.menu-item.active {
+  background-color: #616060;
+}
+
+/* Active link and icon colors */
+.menu-item.active a,
+.menu-item.active i {
+  color: white;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    position: static;
+  
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* For screens smaller than 576px */
+@media (max-width: 576px) {
+  .sidebar {
+    position: static;
+  height:auto;
+    width: 100%;
+    padding: 10px;}
+  .sidebar-button {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+
+/* ===========
+==== FORM
+=========== */
+
+.form-banner img {
+  height: 100%;
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+}
+
+/* =============
+====== laoder 
+=============== */
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(16, 15, 15, 0.3);
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.clickable {
+  cursor: pointer;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ======================
+--------- navbar 
+=================== */
+
+/* Custom styles for Header component */
+
+
+/* Style for Home Button */
+.home-btn {
+  background-color: #636568; /* Black background */
+  border-radius: 5px; /* Rounded corners */
+  font-weight: 600; /* Bold font for home button */
+  padding: 8px 16px; /* Add padding for better spacing */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.home-btn:hover {
+  background-color: #434b55; /* Darker black on hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Style for Analytics Button */
+.analytics-btn {
+  background-color: #636568; /* Blue background for Analytics */
+  border-radius: 5px; /* Rounded corners */
+  font-weight: 600; /* Bold font for Analytics button */
+  padding: 8px 16px; /* Add padding for better spacing */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.analytics-btn:hover {
+  background-color: #434b55; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+
+.analytics-card {
+  background-color: #ff4d4d; /* Red background for card */
+  color: white; /* White text */
+  border: none; /* Remove any border color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  margin: 1rem; /* Add spacing */
+  font-size: 1rem;
+}
+
+.analytics-card .card-body {
+  background-color: inherit; /* Ensure the body inherits the card background */
+  border: none;
+}
+
+.analytics-card .card- {
+  background-color: rgba(0, 0, 0, 0.1); /* Slightly darker footer */
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* Light divider */
+  border-radius: 0 0 8px 8px; /* Match the bottom of the card */
+}
+
+/* Make the table container responsive */
+
+
+/* Optional: Ensure the table is scrollable on small screens */
+@media (max-width: 576px) {
+  .table {
+    overflow-x: scroll;  /* Explicitly enables horizontal scrolling */
+  }
+}
+@media (max-width: 576px) {
+  .banner-container button {
+    width: 40% !important;  /* Makes button full-width on small screens */
+  }
+}
+/* Target the scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+  background: white; /* White background for the track */
+}
+
+/* Handle (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: red; /* Red color for the scrollbar thumb */
+  border-radius: 10px; /* Optional: round the corners of the thumb */
+  border: 3px solid white; /* Optional: white border for the thumb */
+}
+
+/* Optional: Hover effect for the thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: darkred; /* Darker red when hovering */
+}
+/* Fade-in effect */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+@keyframes customFadeIn {
+  0% { opacity: 0; transform: translateY(50px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.custom-animation {
+  animation: customFadeIn 1s ease-out;
+}
+@keyframes moveIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* Custom Background Colors */
+.bg-Aplus { background-color: #f44336; }  /* Red - A+ */
+.bg-Bplus { background-color: #2196F3; }  /* Blue - B+ */
+.bg-ABplus { background-color: #9C27B0; } /* Purple - AB+ */
+.bg-Oplus { background-color: #4CAF50; }  /* Green - O+ */
+.bg-Aminus { background-color: #FF9800; } /* Orange - A- */
+.bg-Bminus { background-color: #00BCD4; } /* Cyan - B- */
+.bg-Ominus { background-color: #FFEB3B; } /* Yellow - O- */
+.bg-ABminus { background-color: #E91E63; } /* Pink - AB- */

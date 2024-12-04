@@ -1,0 +1,76 @@
+#blog-section {
+    background: #f9f9f9;
+    padding: 50px 0;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #d9534f;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .card-title:hover {
+    color: #d9534f;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .image {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .image:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+    .card-title {
+      font-size: 1.25rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card-title {
+      font-size: 1.15rem;
+    }
+    .card-text {
+      font-size: 0.95rem;
+    }
+  }
+  
